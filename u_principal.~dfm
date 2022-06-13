@@ -26,7 +26,6 @@ object form_principal: Tform_principal
     Width = 65
     Height = 22
     TabOrder = 1
-    OnExit = nota1Exit
   end
   object nota2: TEdit
     Left = 8

@@ -15,7 +15,6 @@ type
     nota4: TEdit;
     btn_calcular: TButton;
     procedure btn_calcularClick(Sender: TObject);
-    procedure nota1Exit(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,14 +41,5 @@ begin
 
    showMessage(nome.Text + ' sua média é ' + FloatToStr(media));
 end;
-
-procedure Tform_principal.nota1Exit(Sender: TObject);
-begin
-    if strToFloat( nota1.Text ) > 10 then
-    begin
-      showMessage('Nota é inválida');
-      nota1.SetFocus;
-    end;
-end;            
 
 end.
